@@ -1,18 +1,17 @@
 
-import { ArrowRight, Brain, Zap, Target } from "lucide-react";
+import { Brain, Zap, Target } from "lucide-react";
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
+          <div className="mb-6">
+            <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+              🚀 Launching Soon
+            </span>
+          </div>
+          
           <div className="flex justify-center space-x-4 mb-8">
             <div className="p-3 rounded-full bg-blue-500/20 backdrop-blur-sm animate-pulse">
               <Brain className="w-8 h-8 text-blue-400" />
@@ -35,19 +34,6 @@ const Hero = () => {
             Smart, adaptive skill assessments powered by AI. Dynamically tailors each test based on 
             real-time performance, giving you the clearest picture of your candidate's or learner's true capabilities.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button
-              onClick={scrollToContact}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2"
-            >
-              Request Demo
-              <ArrowRight className="w-5 h-5" />
-            </button>
-            <button className="border border-slate-600 text-slate-300 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-slate-800 hover:border-slate-500 transition-all duration-300">
-              Learn More
-            </button>
-          </div>
         </div>
         
         <div className="relative">

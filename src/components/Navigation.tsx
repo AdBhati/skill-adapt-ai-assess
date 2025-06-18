@@ -45,12 +45,6 @@ const Navigation = () => {
               >
                 About
               </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
-              >
-                Get Started
-              </button>
             </div>
           </div>
           
@@ -84,12 +78,6 @@ const Navigation = () => {
                 className="text-slate-300 hover:text-blue-400 block px-3 py-2 text-base font-medium w-full text-left"
               >
                 About
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white block px-3 py-2 rounded-lg font-medium w-full text-left mt-4"
-              >
-                Get Started
               </button>
             </div>
           </div>

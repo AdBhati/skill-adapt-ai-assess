@@ -1,14 +1,7 @@
 
-import { Code, Database, Award, Users } from "lucide-react";
+import { Code, Database, Award } from "lucide-react";
 
 const About = () => {
-  const stats = [
-    { number: "10+", label: "Years Experience", icon: Award },
-    { number: "1M+", label: "Assessments Processed", icon: Database },
-    { number: "500+", label: "Companies Served", icon: Users },
-    { number: "99.9%", label: "System Uptime", icon: Code }
-  ];
-
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -23,20 +16,6 @@ const About = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center group">
-              <div className="mb-4 flex justify-center">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 p-4 group-hover:scale-110 transition-transform duration-300">
-                  <stat.icon className="w-8 h-8 text-white" />
-                </div>
-              </div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">{stat.number}</div>
-              <div className="text-slate-400">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-        
         <div className="bg-slate-800/50 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-slate-700">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -46,8 +25,8 @@ const About = () => {
               <div className="space-y-4 text-slate-300">
                 <p className="leading-relaxed">
                   Our founding team brings together deep expertise in machine learning, psychometrics, 
-                  and distributed systems architecture. We've previously built assessment platforms 
-                  serving millions of users with sub-second response times.
+                  and distributed systems architecture. We're building assessment platforms 
+                  designed to serve millions of users with sub-second response times.
                 </p>
                 <p className="leading-relaxed">
                   AdaptoIQ leverages cutting-edge Item Response Theory (IRT) models combined with 
@@ -64,7 +43,7 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-white mb-2">Scalable Architecture</h4>
-                  <p className="text-slate-300">Built on cloud-native infrastructure supporting millions of concurrent assessments</p>
+                  <p className="text-slate-300">Designed for cloud-native infrastructure supporting millions of concurrent assessments</p>
                 </div>
               </div>
               
@@ -83,7 +62,7 @@ const About = () => {
                   <Award className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-white mb-2">Proven Results</h4>
+                  <h4 className="text-lg font-semibold text-white mb-2">Research-Backed</h4>
                   <p className="text-slate-300">Validated psychometric models with published research backing our methodologies</p>
                 </div>
               </div>

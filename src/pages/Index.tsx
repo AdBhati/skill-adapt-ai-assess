@@ -3,7 +3,6 @@ import Hero from "../components/Hero";
 import Features from "../components/Features";
 import UseCases from "../components/UseCases";
 import About from "../components/About";
-import Contact from "../components/Contact";
 import Navigation from "../components/Navigation";
 
 const Index = () => {
@@ -14,7 +13,12 @@ const Index = () => {
       <Features />
       <UseCases />
       <About />
-      <Contact />
+      
+      <div className="text-center py-16 px-4 border-t border-slate-800">
+        <p className="text-slate-400">
+          © 2025 AdaptoIQ. All rights reserved.
+        </p>
+      </div>
     </div>
   );
 };
