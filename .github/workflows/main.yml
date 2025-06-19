@@ -47,13 +47,19 @@ jobs:
       contents: read
 
     steps:
-      - name: Download artifact from build job
+      - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: node-app
 
       - name: Unzip artifact
         run: unzip release.zip
+
+      - name: Move build files to root
+        run: |
+          rm -rf dist
+          unzip release.zip
+          mv dist/* .
 
       - name: Deploy to Azure Static Web App
         uses: Azure/static-web-apps-deploy@v1
@@ -62,6 +68,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/"
-          output_location: "dist"
+          output_location: "."
           skip_app_build: true
-
